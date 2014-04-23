@@ -1,0 +1,81 @@
+html,
+body,
+header,
+#wrapper {
+  width: 100%;
+}
+html,
+body {
+  height: 100%;
+  color: black;
+}
+/*-----------------------class-----------------------*/
+/*-----------------------layout-----------------------*/
+header {
+  height: 70px;
+}
+#wrapper {
+  position: absolute;
+  top: 70px;
+  bottom: 0;
+}
+.side-bar {
+  position: absolute;
+  left: 0;
+  width: 360px;
+  height: 100%;
+  -webkit-box-shadow: 0 -1px 1px 0 #808080;
+  -moz-box-shadow: 0 -1px 1px 0 #808080;
+  -o-box-shadow: 0 -1px 1px 0 #808080;
+  box-shadow: 0 -1px 1px 0 #808080;
+}
+#map {
+  position: absolute;
+  left: 360px;
+  right: 0;
+  height: 100%;
+  -webkit-box-shadow: -1px -1px 1px 0 #808080;
+  -moz-box-shadow: -1px -1px 1px 0 #808080;
+  -o-box-shadow: -1px -1px 1px 0 #808080;
+  box-shadow: -1px -1px 1px 0 #808080;
+}
+/*-----------------------header-----------------------*/
+header .left {
+  float: left;
+  height: 70px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+header .left img {
+  width: 67px;
+  vertical-align: middle;
+}
+header .left span {
+  display: inline-block;
+  width: 250px;
+  margin-left: 30px;
+  vertical-align: middle;
+}
+header .right {
+  float: right;
+  height: 70px;
+}
+header .right .blog-link {
+  display: inline-block;
+  width: 1em;
+  padding: 19px 12px;
+  border-left: 1px solid gray;
+  vertical-align: middle;
+  cursor: pointer;
+  background: #f15b40;
+}
+header .right .blog-link a:link,
+header .right .blog-link a:visited {
+  text-decoration: none;
+  color: black;
+}
+header .right .blog-link a:hover,
+header .right .blog-link a:focus {
+  text-decoration: none;
+  color: #67abb8;
+}

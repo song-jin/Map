@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src='http://api.map.baidu.com/api?v=1.5&ak=密匙'></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.js"></script>
+	<link rel="stylesheet" href="http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.css" />
+</head>
+<body>
+	<header>
+		<div class='left'>
+			<a class='logo' href='127.0.0.1'>
+				<img src='img/logo.png'>
+			</a>
+			<span>A demo using BaiDu-Map API EMail:wufashenqing@gmail.com</span>
+			<select class='select'>
+				<option value='guangzhou'>广州</option>
+				<option value='shanghai'>上海</option>
+				<option value='beijing'>北京</option>
+				<option value='shenzhen'>深圳</option>
+				<option value='choice-more'>选择更多</option>
+			</select>
+		</div>
+		<div class='right'>
+			<span class='blog-link'>
+				<a href='http://sjin.sinaapp.com' target='_blank'>博客</a>
+			</span>
+		</div>
+	</header>
+	<div id='wrapper'>
+		<div class='side-bar'>
+			<form></form>
+		</div>
+		<div id='map'></div>
+	</div>
+	<!--模板1-->
+	<script type="text/template" id='tool'>
+		<div>
+			<div class='ceju'>测距</div>
+			<div class='zuobiao'>鼠标点击拾取坐标</div>
+		</div>
+		<div>
+			<div class='gongjiao'>公交查询</div>
+			<div class='jiache'>驾车路线</div>
+			<div class='buxing'>步行导航</div>
+		</div>
+	</script>
+	<!--模板2-->
+	<script type="text/template" id='result'>
+		<p>hahaha</p>
+	</script>
+	<script data-main='js/main.js' src='js/libs/require/require.js'></script>
+
+
+</body>
+</html>
